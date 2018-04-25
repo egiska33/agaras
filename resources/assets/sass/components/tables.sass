@@ -1,0 +1,47 @@
+@media screen and (max-width: 991px)
+    .table-bordered thead
+        display: none
+
+    .table-responsive-row td::before
+        display: block
+        top: 7px
+        left: 12px
+        width: 100%
+        padding-right: 10px
+        color: #aaa
+        font-size: 0.9em
+        font-weight: bold
+
+    .table-responsive-row td
+        position: relative
+        width: 100% !important
+        text-align: left !important
+        line-height: 2em !important
+        font-size: 1.15em !important
+        overflow: hidden
+        font-weight: 700
+
+    .table-responsive-row tr td:last-child
+        text-align: right!important
+
+    .table-responsive-row tr td.no-padding-td:last-child
+        padding-left: 43%!important
+        text-align: left!important
+
+    .table-bordered
+        display: block
+
+        tbody
+            display: block
+
+            tr
+                display: block
+
+    .table-bordered > tbody > tr > td
+        display: block
+
+    .routesTable
+        tbody
+            tr
+                td:last-child
+                    text-align: left !important

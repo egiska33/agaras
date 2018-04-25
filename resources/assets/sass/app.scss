@@ -1,0 +1,106 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//Ionicons
+@import "node_modules/ionicons/dist/scss/ionicons.scss";
+
+//Font awesome
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+//Components
+@import "components/tables.sass";
+@import "components/pdf.sass";
+@import "components/header.sass";
+
+@import "components/staticPages.scss";
+
+#app, .wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .content-wrapper{
+        flex-grow: 1
+    }
+}
+
+[disabled]{
+    cursor: default !important;
+}
+
+.modal-backdrop{
+    display: none;
+}
+
+#applicationModal{
+    z-index: 1000;
+    right: unset;
+    bottom: unset;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-dialog{
+    margin-top: 60px;
+    z-index: 1000;
+}
+
+.main-footer{
+    position: relative;
+    z-index: 5 !important;
+}
+
+.crossout{
+    text-decoration-line: line-through;
+    display: inline-block;
+}
+
+.syncingScreen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    span {
+        color: white;
+        font-size: 32px;
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    } to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 1s linear infinite;
+    -moz-animation: rotating 1s linear infinite;
+    -ms-animation: rotating 1s linear infinite;
+    -o-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+}

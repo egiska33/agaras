@@ -1,0 +1,52 @@
+.main-header
+    .navbar-custom-menu
+        li:first-child
+            height: 50px
+            display: inline-flex
+            align-items: center
+
+            span
+                font-weight: bold
+                color: white
+
+.syncStatusIcon
+    width: 14px
+    height: 14px
+    border-radius: 7px
+    border: 1px solid #afafaf
+    background-color: white
+    display: inline-block
+    margin-right: 5px
+    vertical-align: -2px
+
+.syncSuccessIcon
+    background-color: #8bff5e
+
+.syncFailIcon
+    background-color: #ff5b5b
+
+.syncInProggressIcon
+    background-color: #ff9a5b
+
+.syncError
+    position: fixed
+    top: 80px
+    left: 0
+    width: 100%
+
+#navbar-collapse
+    @media screen and (max-width: 768px)
+        width: 100%
+        margin-left: auto
+
+        .mobile-auth
+            color: white
+            padding-left: 20px
+            padding-bottom: 7px
+            border-bottom: 2px solid white
+            margin-bottom: 7px
+
+        .mobile-logout
+            margin-top: 7px
+            padding-top: 7px
+            border-top: 2px solid white
